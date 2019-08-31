@@ -7,16 +7,17 @@
 			<li class="nav-{{slug}}{{#if current}} active{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
 			{{/foreach}}
 			{{#if @site.twitter}}
-			<li class="nav-twitter"><a href="{{twitter_url}}" title="{{@site.twitter}}"><i class="ic ic-twitter"></i> Twitter</a></li>
+			<li class="nav-twitter"><a href="{{twitter_url "santhisenana"}}"  target="_blank" title="{{@site.twitter}}"><i class="ic ic-twitter"></i> Twitter</a></li>
 			{{/if}}
 			{{#if @site.facebook}}
-			<li class="nav-facebook"><a href="{{facebook_url}}" title="{{@site.facebook}}"><i class="ic ic-facebook"></i> Facebook</a></li>
+			<li class="nav-facebook"><a href="{{facebook_url "santhisenan.ajith"}}" target="_blank" title="{{@site.facebook}}"><i class="ic ic-facebook"></i> Facebook</a></li>
 			{{/if}}
-			{{#if @labs.subscribers}}
+			{{!-- {{#if @labs.subscribers}}
 			<li class="nav-subscribe"><a href="{{@site.url}}/subscribe/"><i class="ic ic-mail"></i> {{t "Subscribe"}}</a></li>
 			{{else}}
 			<li class="nav-rss"><a href="{{@site.url}}/rss/"><i class="ic ic-rss"></i> {{t "Subscribe"}}</a></li>
-			{{/if}}
+			{{/if}} --}}
+			<li class="nav-link"><a href="https://github.com/santhisenan" target="_blank"><i class="ic ic-link"></i> {{t "GitHub"}}</a></li>
 		</ul>
 	</div>
 </nav>
